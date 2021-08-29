@@ -1,0 +1,9 @@
+*build*
+*Debug*
+*Release*
+*/.vs/*
+*/.vscode/*
+*~*
+*.bak
+*.user
+*.pro

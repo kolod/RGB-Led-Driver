@@ -1,0 +1,120 @@
+$reset
+
+// Sturtup
+PINB |= 0x10
+#2000
+
+// 'U'
+// Start bit
+PINB &= 0xEF
+#82
+// Bit 0
+PINB |= 0x10
+#82
+// Bit 1
+PINB &= 0xEF
+#82
+// Bit 2
+PINB |= 0x10
+#82
+// Bit 3
+PINB &= 0xEF
+#82
+// Bit 4
+PINB |= 0x10
+#82
+// Bit 5
+PINB &= 0xEF
+#82
+// Bit 6
+PINB |= 0x10
+#82
+// Bit 7
+PINB &= 0xEF
+#82
+// Stop bit
+PINB |= 0x10
+#82
+
+$repeat 2
+
+// 'F'
+// Start bit
+PINB &= 0xEF
+#82
+#82
+// Bit 0,1
+PINB |= 0x10
+#82
+#82
+#82
+// Bit 2,3,4
+PINB &= 0xEF
+#82
+#82
+// Bit 5,6
+PINB |= 0x10
+#82
+// Bit 7
+PINB &= 0xEF
+#82
+// Stop bit
+PINB |= 0x10
+#82
+
+$endrep
+
+$repeat 5
+
+// '0'
+// Start bit
+PINB &= 0xEF
+#82
+#82
+#82
+// Bit 0,1
+PINB |= 0x10
+#82
+#82
+// Bit 2,3
+PINB &= 0xEF
+#82
+#82
+// Bit 4,5,6,7
+PINB |= 0x10
+#82
+#82
+#82
+#82
+// Stop bit
+PINB |= 0x10
+#82
+
+$endrep
+
+// '1'
+// Start bit
+PINB &= 0xEF
+#82
+#82
+#82
+// Bit 0,1
+PINB |= 0x10
+#82
+#82
+// Bit 2,3
+PINB &= 0xEF
+#82
+#82
+// Bit 4,5,6
+PINB |= 0x10
+#82
+#82
+#82
+// Bit 7
+// Stop bit
+PINB |= 0x10
+#82
+#82
+
+$break

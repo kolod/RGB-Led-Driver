@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/bulb.svg</file>
+        <file>icons/color.svg</file>
+        <file>icons/close.svg</file>
+        <file>icons/bulb-black.svg</file>
+    </qresource>
+</RCC>
